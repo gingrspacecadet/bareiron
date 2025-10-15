@@ -41,5 +41,5 @@ for arg in "$@"; do
 done
 
 rm -f "bareiron$exe"
-$compiler src/*.c -O2 -Iinclude -o "bareiron$exe" $windows_linker
+$compiler -static src/*.c -O2 -Iinclude -o "bareiron$exe" $windows_linker
 "./bareiron$exe"
