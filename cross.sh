@@ -42,4 +42,3 @@ done
 
 rm -f "cross$exe"
 $compiler -static src/*.c -O2 -Iinclude -o "cross$exe" $windows_linker
-"./cross$exe"
